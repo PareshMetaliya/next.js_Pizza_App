@@ -48,7 +48,7 @@ export default function RootLayout({
 
 
       <body className={`${poppins.variable} antialiased`}>
-        <div className="fixed top-0 z-10 bg-navbar h-[10vh] w-[100vw]">
+        <div className=" fixed top-0 z-20 bg-navbar max-md:h-[6vh] md:h-[10vh] w-[100vw] border-b-[1px] border-customGrayDark">
           <Link href="/">Home</Link>
         </div>
         {children}

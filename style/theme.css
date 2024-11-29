@@ -155,5 +155,23 @@
     @apply text-[22px] leading-[30px]; /* Adjust for extra-large screens */
   }
 }
+.paragraph-small {
+  @apply text-[12px] font-medium leading-[20px];
+}
+@media (min-width: 640px) {
+  .paragraph-small {
+    @apply text-[12px] leading-[20px]; /* Adjust for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .paragraph-small {
+    @apply text-[12px] leading-[20px]; /* Adjust for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph-small {
+    @apply text-[14px] leading-[22px]; /* Adjust for extra-large screens */
+  }
+}
 
 }

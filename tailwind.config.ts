@@ -8,12 +8,16 @@ export default {
   ],
   theme: {
     extend: {
-      
+      screens: {
+        'xs': '450px', // Custom screen size for 'xs'
+       
+      },
 
       container: {
         center: true, // Keep the container centered
         padding: '2rem', // Consistent padding inside the container
         screens: {
+          // 'xs': '450px',
           '2xl': '1400px', // Custom screen size for 2xl
         },
       },      
