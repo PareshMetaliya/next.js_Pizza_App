@@ -45,10 +45,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    
 
-<body className={`${poppins.variable} antialiased`}>
-  <Link href = "/">Home</Link>
+
+      <body className={`${poppins.variable} antialiased`}>
+        <div className="fixed top-0 z-10 bg-navbar h-[10vh] w-[100vw]">
+          <Link href="/">Home</Link>
+        </div>
         {children}
       </body>
     </html>

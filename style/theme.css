@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+ /* For headings and paragraphs with responsive design */
+.h1-bold {
+  @apply text-[45px] font-bold leading-[65px] tracking-tight;
+}
+@media (max-width: 639px) {
+  .h1-bold {
+    @apply text-[40px] leading-[50px]; /* Adjust for smaller screens */
+  }
+}
+@media (min-width: 1024px) {
+  .h1-bold {
+    @apply text-[55px] leading-[75px]; /* Increase for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .h1-bold {
+    @apply text-[65px] leading-[85px]; /* Further increase for extra-large screens */
+  }
+}
+
+.h2-bold {
+  @apply text-[24px] font-bold leading-[31.2px];
+}
+@media (min-width: 640px) {
+  .h2-bold {
+    @apply text-[28px] leading-[35px]; /* Slightly larger for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .h2-bold {
+    @apply text-[32px] leading-[40px]; /* Larger for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .h2-bold {
+    @apply text-[36px] leading-[45px]; /* Larger for extra-large screens */
+  }
+}
+
+.h2-semibold {
+  @apply text-[24px] font-semibold leading-[31.2px];
+}
+@media (min-width: 640px) {
+  .h2-semibold {
+    @apply text-[28px] leading-[35px]; /* Slightly larger for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .h2-semibold {
+    @apply text-[32px] leading-[40px]; /* Larger for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .h2-semibold {
+    @apply text-[36px] leading-[45px]; /* Larger for extra-large screens */
+  }
+}
+
+.h3-bold {
+  @apply text-[20px] font-bold leading-[26px];
+}
+@media (min-width: 768px) {
+  .h3-bold {
+    @apply text-[22px] leading-[30px]; /* Slightly larger for large screens */
+  }
+}
+@media (min-width: 1024px) {
+  .h3-bold {
+    @apply text-[26px] leading-[35px]; /* Larger for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .h3-bold {
+    @apply text-[30px] leading-[40px]; /* Larger for extra-large screens */
+  }
+}
+
+.h3-semibold {
+  @apply text-[20px] font-semibold leading-[24.8px];
+}
+@media (min-width: 768px) {
+  .h3-semibold {
+    @apply text-[22px] leading-[28px]; /* Slightly larger for large screens */
+  }
+}
+@media (min-width: 1024px) {
+  .h3-semibold {
+    @apply text-[26px] leading-[35px]; /* Larger for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .h3-semibold {
+    @apply text-[30px] leading-[40px]; /* Larger for extra-large screens */
+  }
+}
+
+.paragraph-regular {
+  @apply text-[16px] font-normal leading-[22.4px];
+}
+@media (min-width: 640px) {
+  .paragraph-regular {
+    @apply text-[18px] leading-[24px]; /* Adjust for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .paragraph-regular {
+    @apply text-[20px] leading-[28px]; /* Adjust for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph-regular {
+    @apply text-[22px] leading-[30px]; /* Adjust for extra-large screens */
+  }
+}
+
+.paragraph-medium {
+  @apply text-[16px] font-medium leading-[22.4px];
+}
+@media (min-width: 640px) {
+  .paragraph-medium {
+    @apply text-[18px] leading-[24px]; /* Adjust for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .paragraph-medium {
+    @apply text-[20px] leading-[28px]; /* Adjust for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph-medium {
+    @apply text-[22px] leading-[30px]; /* Adjust for extra-large screens */
+  }
+}
+
+.paragraph-semibold {
+  @apply text-[16px] font-semibold leading-[20.8px];
+}
+@media (min-width: 640px) {
+  .paragraph-semibold {
+    @apply text-[18px] leading-[24px]; /* Adjust for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .paragraph-semibold {
+    @apply text-[20px] leading-[28px]; /* Adjust for large screens */
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph-semibold {
+    @apply text-[22px] leading-[30px]; /* Adjust for extra-large screens */
+  }
+}
+
+}
