@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function HeroSection() {
@@ -10,7 +11,8 @@ function HeroSection() {
                 <aside className='flex items-start flex-col md:gap-6 max-md:gap-3 md:pl-10 m-2 max-md:mt-20 max-md:justify-center max-md:items-center max-md:text-center' >
                     <h1 className="h1-bold text-customBrown">Your Cravings, our <br></br><span className="text-customYellow">Command.</span> </h1>
                     <p className='paragraph-regular text-customBrown'>Savor the convenience of culinary magic!<br></br> Browse, order, and relish - <br></br>all in one seamless app</p>
-                    <button className='btn  '>Explorer Menu</button>
+                   
+                   <Link href="/menu"> <button className='btn  '>Explorer Menu</button></Link>
                 </aside>
                 <section className='flex-between relative md:mr-3 md:mt-12  max-md:justify-center max-md:items-center max-md:text-center max-md:mt-2 '>
 

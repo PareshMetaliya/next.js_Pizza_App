@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 
 interface Pizza {
@@ -22,7 +23,7 @@ function ProductCard({ pizza }: ProductCardProps) {
 
 
     return (
-        <div className='flex flex-col w-full  h-full gap-2 items-center justify-evenly p-2 pb-2 overflow-hidden shadow-lg'>
+        <div className='flex flex-col w-full  h-full gap-2 items-center justify-evenly p-2 pb-2 overflow-hidden shadow-lg '>
             <Image
                 src={imageSrc}
                 alt='pizza image'
@@ -32,7 +33,8 @@ function ProductCard({ pizza }: ProductCardProps) {
             />
             <h2 className='h3-bold'>{name}</h2>
             <p className='paragraph-small text-customGrayDark text-xs overflow-hidden text-center'>{description}</p>
-            <button className='btn'>Order Now</button>
+           
+           <Link href={`/menu/${_id}`}> <button className='btn'>Order Now</button></Link>
 
         </div>
     )

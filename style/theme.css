@@ -62,21 +62,21 @@
 }
 
 .h3-bold {
-  @apply text-[20px] font-bold leading-[26px];
+  @apply text-[16px] font-bold leading-[26px];
 }
 @media (min-width: 768px) {
   .h3-bold {
-    @apply text-[22px] leading-[30px]; /* Slightly larger for large screens */
+    @apply text-[18px] leading-[30px]; /* Slightly larger for large screens */
   }
 }
 @media (min-width: 1024px) {
   .h3-bold {
-    @apply text-[26px] leading-[35px]; /* Larger for large screens */
+    @apply text-[20px] leading-[35px]; /* Larger for large screens */
   }
 }
 @media (min-width: 1280px) {
   .h3-bold {
-    @apply text-[30px] leading-[40px]; /* Larger for extra-large screens */
+    @apply text-[22px] leading-[40px]; /* Larger for extra-large screens */
   }
 }
 

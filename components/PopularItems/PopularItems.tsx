@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import Link from "next/link";
 
 function PopularItems() {
 
@@ -44,9 +45,9 @@ function PopularItems() {
 
 
         <>
-            <section className="container flex flex-col mt-10 ">
+            <section className="container flex flex-col mt-10 justify-center items-center ">
 
-                <div className="flex flex-col items-center justify-center gap-4 pb-[8px] mb-4 border-b-[0.5px] border-b-customGrayDark">
+                <div className="flex flex-col items-center justify-center gap-4 pb-[8px] mb-4 ">
                     <h2 className="h2-bold text-customGray">
                     Exclusive Menu For You!
                     </h2>
@@ -63,6 +64,7 @@ function PopularItems() {
                         <ProductCard key={pizza._id} pizza={pizza} />
                     ))}
                 </div>
+                {/* <Link href="/menu"> <button className='btn  '>Explorer More</button></Link> */}
             </section>
         </>
 
