@@ -47,8 +47,10 @@ function PopularItems() {
         <>
             <section className="container flex flex-col mt-10 justify-center items-center ">
 
-                <div className="flex flex-col items-center justify-center gap-4 pb-[8px] mb-4 "   data-aos="zoom-in"
-            data-aos-delay="850">
+                <div className="flex flex-col items-center justify-center gap-4 pb-[8px] mb-4 "  
+            //      data-aos="zoom-in"
+            // data-aos-delay="850"
+            >
                     <h2 className="h2-bold text-customGray">
                     Exclusive Menu For You!
                     </h2>
@@ -64,8 +66,10 @@ function PopularItems() {
              >
 
                     {pizzadata.map((pizza,index) => (
-                        <div key={pizza._id} data-aos="fade-up"
-                        data-aos-delay={`${index * 200 + 850}`}>
+                        <div key={pizza._id}
+                        //  data-aos="fade-up"
+                        // data-aos-delay={`${index * 200 + 850}`}
+                        >
                         <ProductCard key={pizza._id} pizza={pizza} 
                         
                         /></div>

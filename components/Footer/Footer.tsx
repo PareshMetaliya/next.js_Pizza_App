@@ -12,8 +12,8 @@ function Footer() {
   ];
 
   return (
-    <footer className="container">
-      <div className=" bg-customYellow flex gap-4 flex-col items-center justify-center ">
+    <footer className="container ">
+      <div className="bg-customYellow  flex gap-4 flex-col items-center justify-center ">
         <div className="flex gap-4 flex-col items-center justify-center py-6">
           <Link href="/">
           <h2 className="h2-bold text-customBrown  ">

@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { Container } from "postcss";
 
 
 
@@ -49,7 +50,7 @@ export default function RootLayout({
     <html lang="en">
 
 
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${poppins.variable} antialiased` }>
         <Navbar />
         {children}
         <Footer />

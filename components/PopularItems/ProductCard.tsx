@@ -32,13 +32,13 @@ function ProductCard({ pizza }: ProductCardProps) {
                 height={160}
                 width={160}
                 className=''
-                data-aos="zoom-in"
-            data-aos-delay="950"
+            //     data-aos="zoom-in"
+            // data-aos-delay="950"
             />
             <h2 className='h3-bold'>{name}</h2>
-            <p className='paragraph-small text-customGrayDark text-xs overflow-hidden text-center'>{description}</p>
+            <p className='paragraph-small text-customBrown text-xs overflow-hidden text-center'>{description}</p>
            
-           <Link href={`/menu/${_id}`}> <button className='btn'>Order Now</button></Link>
+           <Link href={`/menu/${_id}` } className='btn'> Order Now</Link>
 
         </div>
     )

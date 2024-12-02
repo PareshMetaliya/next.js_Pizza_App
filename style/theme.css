@@ -28,7 +28,7 @@
 }
 @media (min-width: 640px) {
   .h2-bold {
-    @apply text-[28px] leading-[35px]; /* Slightly larger for medium screens */
+    @apply text-[24px] leading-[35px]; /* Slightly larger for medium screens */
   }
 }
 @media (min-width: 1024px) {

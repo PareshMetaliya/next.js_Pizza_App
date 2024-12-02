@@ -25,16 +25,20 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 function CustomerReview() {
     return (
         <section className="container flex flex-col gap-4 mt-8 p-2">
-            <div className=" flex flex-col justify-between items-center gap-2" data-aos="zoom-in-down"
-            data-aos-delay="750">
-                <p className="text-customYellow text-[12px] font-semibold">
+            <div className=" flex flex-col justify-between items-center gap-2" 
+            // data-aos="zoom-in-down"
+            // data-aos-delay="750"
+            >
+                <p className="text-customYellow text-[12px] font-semibold bg-customBrown rounded-sm px-2">
                     Testimonials
                 </p>
                 <h2 className="h2-bold text-customDark">Our Happy Client Says</h2>
             </div>
             <div className=" flex gap-4 m-6 p-2">
-                <div className="flex flex-1 justify-center items-center " data-aos="slide-right"
-            data-aos-delay="950">
+                <div className="flex flex-1 justify-center items-center " 
+            //     data-aos="slide-right"
+            // data-aos-delay="950"
+            >
 
 
                     <Carousel className="max-w-[450px] max-md:w-[300px] max-sm:w-[250px]">
@@ -49,7 +53,7 @@ function CustomerReview() {
                                         <CardHeader className="flex gap-2 items-center justify-center border-b border-customGrayDark mb-2">
 
                                             <Avatar className="h-[60px] w-[60px]">
-                                                <AvatarImage src={review.image} />
+                                                <AvatarImage src={review.image} alt="image"/>
                                                 <AvatarFallback>CN</AvatarFallback>
                                             </Avatar>
 
