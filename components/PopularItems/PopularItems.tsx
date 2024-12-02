@@ -47,7 +47,8 @@ function PopularItems() {
         <>
             <section className="container flex flex-col mt-10 justify-center items-center ">
 
-                <div className="flex flex-col items-center justify-center gap-4 pb-[8px] mb-4 ">
+                <div className="flex flex-col items-center justify-center gap-4 pb-[8px] mb-4 "   data-aos="zoom-in"
+            data-aos-delay="850">
                     <h2 className="h2-bold text-customGray">
                     Exclusive Menu For You!
                     </h2>
@@ -59,9 +60,15 @@ function PopularItems() {
 
                 </div>
 
-                <div className=" justify-items-center grid grid-cols-4 max-xs:grid-cols-1 max-sm:grid-cols-2 max-md:grid-cols-2 max-lg:grid-cols-4 gap-0 mt-6">
-                    {pizzadata.map((pizza) => (
-                        <ProductCard key={pizza._id} pizza={pizza} />
+                <div className=" justify-items-center grid grid-cols-4 max-xs:grid-cols-1 max-sm:grid-cols-2 max-md:grid-cols-2 max-lg:grid-cols-4 gap-0 mt-6" 
+             >
+
+                    {pizzadata.map((pizza,index) => (
+                        <div key={pizza._id} data-aos="fade-up"
+                        data-aos-delay={`${index * 200 + 850}`}>
+                        <ProductCard key={pizza._id} pizza={pizza} 
+                        
+                        /></div>
                     ))}
                 </div>
                 {/* <Link href="/menu"> <button className='btn  '>Explorer More</button></Link> */}

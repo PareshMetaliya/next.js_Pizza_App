@@ -15,12 +15,14 @@ function Footer() {
     <footer className="container">
       <div className=" bg-customYellow flex gap-4 flex-col items-center justify-center ">
         <div className="flex gap-4 flex-col items-center justify-center py-6">
+          <Link href="/">
           <h2 className="h2-bold text-customBrown  ">
-            Pizza{" "}
+            Pizza
             <span className="text-customYellow bg-customBrown rounded-sm px-2">
               Rush
             </span>
           </h2>
+          </Link>
           <p className="paragraph-small max-w-[400px] max-sm:max-w-[200px] text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor{" "}

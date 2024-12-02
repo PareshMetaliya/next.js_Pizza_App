@@ -25,14 +25,16 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 function CustomerReview() {
     return (
         <section className="container flex flex-col gap-4 mt-8 p-2">
-            <div className=" flex flex-col justify-between items-center gap-2">
+            <div className=" flex flex-col justify-between items-center gap-2" data-aos="zoom-in-down"
+            data-aos-delay="750">
                 <p className="text-customYellow text-[12px] font-semibold">
                     Testimonials
                 </p>
                 <h2 className="h2-bold text-customDark">Our Happy Client Says</h2>
             </div>
             <div className=" flex gap-4 m-6 p-2">
-                <div className="flex flex-1 justify-center items-center ">
+                <div className="flex flex-1 justify-center items-center " data-aos="slide-right"
+            data-aos-delay="950">
 
 
                     <Carousel className="max-w-[450px] max-md:w-[300px] max-sm:w-[250px]">
@@ -72,7 +74,8 @@ function CustomerReview() {
                     </Carousel>
 
                 </div>
-                <div className=" flex flex-1 justify-center items-center max-lg:hidden">
+                <div className=" flex flex-1 justify-center items-center max-lg:hidden" data-aos="zoom-out-left"
+            data-aos-delay="700">
                     <Image
                         src="/image/customer review image.png"
                         // src="/image/loginPizza2.png"
